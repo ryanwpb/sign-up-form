@@ -27,7 +27,9 @@ div#sign-up, div#sign-in {
   transition: all 0.5s;
 }
 
-
+div#sign-up {
+  z-index: 1;
+}
 
 div#sign-in {
   transform: translateX(-50%);
@@ -48,10 +50,13 @@ input {
   display: block;
   border-radius: 0.25rem;
   border: solid 1px #ccc;
-  margin: 1rem auto;
   padding: 0.5rem;
   color: #333;
   font-size: 18px;
+}
+
+input:not(:last-child) {
+  margin-bottom: 1rem;
 }
 
 input[type="submit"] {
@@ -65,6 +70,10 @@ input[type="submit"] {
   transition: all 0.3s;
 }
 
+input[type="submit"]:hover {
+    box-shadow: none;
+}
+
 #overlay {
   height: 100%;
   position: absolute;
@@ -76,6 +85,7 @@ input[type="submit"] {
   justify-content: center;
   -webkit-transition: all 1s linear;
   transition: all 0.3s linear;
+  z-index: 2;
 }
 
 #overlay.move-left {
@@ -96,9 +106,11 @@ span#overlay-btn {
 div#sign-in.active-right {
   transform: translateX(0%);
   opacity: 1;
+  z-index: 1;
 }
 
 div#sign-up.remove-left {
   transform: translateX(50%);
   opacity: 0;
+  z-index: 1;
 }
