@@ -1,39 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <title>Sign Up Form</title>
-</head>
-<body>
-  <div class="form-area">
-    <div id="sign-up">
-      <form action="" class="sign-up-form">
-            <h4>See what we're about!</h4>
-            <p>We invite you to come experience the difference with our brand.</p>
-            <input type="text" name="name" value="" placeholder="Name">
-            <input type="email" name="email" value="" placeholder="Email">
-            <input type="password" name="password" value="" placeholder="Password">
-            <input type="submit" name="submit" value="Sign Up">
-          </form>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:300,400,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Sign Up Form</title>
+  </head>
+  <body>
+    <div class="form-area">
+      <div id="sign-up">
+        <form action="" class="sign-up-form">
+          <h4>See what we're about!</h4>
+          <p>We invite you to come experience the difference with our brand.</p>
+          <input type="text" name="name" value="" placeholder="Name" />
+          <input type="email" name="email" value="" placeholder="Email" />
+          <input
+            type="password"
+            name="password"
+            value=""
+            placeholder="Password"
+          />
+          <input type="submit" name="submit" value="Sign Up" />
+        </form>
+      </div>
+      <div id="sign-in">
+        <form action="" class="sign-up-form">
+          <h4>Welcome Back Friend!</h4>
+          <p>To keep connected with us please login with your personal info.</p>
+          <input type="email" name="email" value="" placeholder="Email" />
+          <input
+            type="password"
+            name="password"
+            value=""
+            placeholder="Password"
+          />
+          <input type="submit" name="submit" value="Sign In" />
+        </form>
+      </div>
+      <div id="overlay">
+        <span id="overlay-btn">Sign In</span>
+      </div>
     </div>
-    <div id="sign-in">
-      <form action="" class="sign-up-form">
-            <h4>Welcome Back Friend!</h4>
-            <p>To keep connected with us please login with your personal info.</p>
-            <input type="email" name="email" value="" placeholder="Email">
-            <input type="password" name="password" value="" placeholder="Password">
-            <input type="submit" name="submit" value="Sign In">
-          </form>
-    </div>
-    <div id="overlay">
-      <span id="overlay-btn">Sign In</span>
-    </div>
-  </div>
-<script src="main.js" charset="utf-8"></script>
-</body>
+    <script src="main.js" charset="utf-8"></script>
+  </body>
 </html>
