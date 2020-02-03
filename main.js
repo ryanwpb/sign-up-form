@@ -1,20 +1,20 @@
-var span = document.getElementById('overlay-btn');
-var overlay = document.getElementById('overlay');
-var signUp = $('#sign-up');
-var signIn = $('#sign-in');
+let span = document.querySelector("#overlay-btn");
+let overlay = document.querySelector("#overlay");
+let signUp = document.querySelector("#sign-up");
+let signIn = document.querySelector("#sign-in");
 
-$(span).on('click', function() {
-  if ($(overlay).hasClass('move-left')) {
-    $(span).html('Sign In');
-    $(signUp).removeClass('remove-left');
-    $(overlay).removeClass('move-left');
-    $(signIn).removeClass('active-right');
-  } else if ($(!overlay).hasClass('move-left')) {
-    $(signUp).addClass('active-left');
+span.addEventListener("click", function(e) {
+  if (overlay.classList.contains("move-left")) {
+    span.innerHTML = "Sign In";
+    signUp.classList.remove("remove-left");
+    overlay.classList.remove("move-left");
+    signIn.classList.remove("active-right");
+  } else if (overlay.classList.contains("move-left")) {
+    signUp.classList.add("active-left");
   } else {
-    $(signUp).addClass('remove-left');
-    $(overlay).addClass('move-left');
-    $(span).html('Sign Up');
-    $(signIn).addClass('active-right');
+    signUp.classList.add("remove-left");
+    overlay.classList.add("move-left");
+    span.innerHTML = "Sign Up";
+    signIn.classList.add("active-right");
   }
 });
